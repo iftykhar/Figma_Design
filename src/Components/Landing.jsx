@@ -81,6 +81,27 @@ const Landing = () => {
 
                     </div>
                 </div>
+                <div className="writs-watch pt-8">
+                    <p className='font-bold text-gray-700 text-xl'>Wrist Size</p>
+                    <div className="size-btns pt-4 flex gap-3">
+                        <button className='border-2 rounded-md py-1 px-6 flex gap-2 text-gray-600 items-center text-center '>
+                            <h2 className='font-semibold'>S</h2><p>$69</p>
+                        </button>
+                        <button className='border-2 rounded-md py-1 px-6 flex gap-2 text-gray-600 items-center text-center '>
+                            <h2 className='font-semibold'>M</h2><p>$79</p>
+                        </button>
+                        <button className='border-2 rounded-md py-1 px-6 flex gap-2 text-gray-600 items-center text-center '>
+                            <h2 className='font-semibold'>L</h2><p>$89</p>
+                        </button>
+                        <button className='border-2 rounded-md py-1 px-6 flex gap-2 text-gray-600 items-center text-center '>
+                            <h2 className='font-semibold'>XL</h2><p>$99</p>
+                        </button>
+                        
+                    </div>
+                </div>
+                <div className="">
+                        <div className=""></div>
+                </div>
             </div>
         </section>
     </>
