@@ -1,8 +1,16 @@
-// import React from 'react';
+import React, { useState } from 'react';
 import violate from '../assets/violate.png';
+import black from '../assets/black.png';
+import blue from '../assets/blue.png';
+import cyan from '../assets/cyan.png';
 import { FaStar, FaStarHalfAlt, FaRegStar, FaRegHeart } from "react-icons/fa";
+import Modal from '../Components/Modal.jsx';
 
 const Landing = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false); 
+  const handleAddToCartClick = () => { setIsModalOpen(true); }; 
+  const handleCloseModal = () => { setIsModalOpen(false); };
+
   return (
     <>
       <section className='container mx-auto p-4 flex flex-wrap'>
@@ -72,11 +80,14 @@ const Landing = () => {
               <span className="px-4 py-2">0</span>
               <button className="px-4 py-2 border-l">+</button>
             </div>
-            <button className='border-2 rounded-lg px-4 py-2 bg-blue-500 text-white font-semibold'>Add to Cart</button>
+            <button onClick={handleAddToCartClick} className='border-2 rounded-lg px-4 py-2 bg-blue-500 text-white font-semibold'>Add to Cart</button>
             <FaRegHeart className='text-xl' />
           </div>
         </div>
       </section>
+
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
+
     </>
   )
 }
