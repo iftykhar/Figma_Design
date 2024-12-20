@@ -2,15 +2,28 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import page from './Components/page'
+import Landing from './Components/Landing'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <page />
-      {/* <div>
+    <Landing />
+      {/* <section className='container '>
+        <h1 className="text-3xl font-bold underline">
+            Hello world!
+        </h1>
+            <div className="">
+                <img src="" alt="" />
+            </div>
+            <div className="">
+
+            </div>
+        </section> */}
+      {/* <page />
+      <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
